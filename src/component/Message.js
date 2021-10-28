@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMessages } from '../redux/message/message';
 
-const Greeting = () => {
+const Message = () => {
   const dispatch = useDispatch();
   const message = useSelector((state) => state.messageReducer.message);
 
@@ -12,11 +12,11 @@ const Greeting = () => {
 
   return (
     <div>
-      Greeting:
+      Message:
       {' '}
       {message.title}
     </div>
   );
 };
 
-export default Greeting;
+export default Message;
