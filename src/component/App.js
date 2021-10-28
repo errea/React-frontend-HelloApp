@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Greeting from './Greeting';
+import Greeting from './Message';
 import store from '../redux/configureStore';
 
 const App = () => (
