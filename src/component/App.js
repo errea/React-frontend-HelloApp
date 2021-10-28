@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Greeting from './Message';
+import Message from './Message';
 import store from '../redux/configureStore';
 
 const App = () => (
@@ -9,7 +9,7 @@ const App = () => (
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" render={() => <Greeting />} />
+          <Route exact path="/" render={() => <Message />} />
         </Switch>
       </Router>
     </Provider>
